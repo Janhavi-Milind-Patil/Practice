@@ -9,3 +9,15 @@ end if;
 end;
 .
 /
+======================================================
+declare
+pr float:=&principal_amount;
+tm float:=&time_in_years;
+rt float:=&rate_of_interest;
+si float;
+begin
+si:=(pr*rt*tm)/100;
+dbms_output.put_line('Simple interest is : '||si);
+end;
+.
+/
