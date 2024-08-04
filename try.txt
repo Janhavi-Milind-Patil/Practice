@@ -1,0 +1,11 @@
+declare
+age int:=&age;
+begin
+if age>=18 then
+dbms_output.put_line('You are an adult');
+else
+dbms_output.put_line('You are a minor');
+end if;
+end;
+.
+/
