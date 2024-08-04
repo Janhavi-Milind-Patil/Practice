@@ -21,3 +21,17 @@ dbms_output.put_line('Simple interest is : '||si);
 end;
 .
 /
+==================================================
+declare
+m1 int;
+m2 int;
+m3 int;
+perc int;
+tot int;
+sroll int:=&rollno;
+begin
+select sub1,sub2,sub3 into m1,m2,m3 from student where rollno=sroll;
+tot:=m1+m2+m3;
+perc:=tot/3;
+update student set percentage=perc where rollno=sroll;
+end;
